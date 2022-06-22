@@ -31,9 +31,15 @@ vignettes/*.pdf
 *_cache/
 /cache/
 
+# Quarto files
+_book/
+.quarto/
+
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
 
 # R Environment Variables
 .Renviron
+
+/.quarto/
