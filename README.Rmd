@@ -5,7 +5,9 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 Quarto Book example source files to make a website, pdf and epub.
 
 ## Versions
@@ -13,7 +15,6 @@ Quarto: `bash quarto --version`
 
 ## Render README.Rmd
 To make the README.md file, use:
-
-```r
+```{r render-readme, echo=TRUE, eval=FALSE}
 knitr::knit(input = "./README.Rmd")
 ```
