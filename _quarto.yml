@@ -26,8 +26,8 @@ format:
   pdf:
     documentclass: scrbook
     papersize: a4
-    geometry:
-      - showframe
+    # geometry:
+    #   - showframe
   epub:
     cover-image: cover.png
   # docx:
