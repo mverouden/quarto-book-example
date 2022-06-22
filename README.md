@@ -7,7 +7,7 @@
 Quarto Book example source files to make a website, pdf and epub.
 
 ## Versions
-Quarto: `sh quarto --version` results in 0.9.607
+Quarto: 0.9.607, by using `quarto --version` in a terminal.
 
 ## Render README.Rmd
 To make the README.md file, use:
