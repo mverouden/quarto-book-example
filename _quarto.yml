@@ -19,11 +19,18 @@ format:
     theme: cosmo
     code-background: true
     code-fold: true
+    code-summary: "Show the code"
   pdf:
-    documentclass: scrreprt
+    documentclass: scrbook
     papersize: a4
+    geometry:
+      - showframe
   epub:
     cover-image: cover.png
+  # docx:
+  #   toc: true
+  #   number-sections: true
+  #   highlight-style: github
 
 execute:
   warning: false
