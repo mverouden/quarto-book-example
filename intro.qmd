@@ -16,7 +16,7 @@ opts_chunk$set(comment = "#>",
 knit_theme$set("default")
 ```
 
-This is a book created from markdown and executable code.
+This is a book created from markdown\index{markdown} and executable code.
 
 See @knuth84 for additional discussion of literate programming.
 
@@ -46,7 +46,7 @@ ggplot(airquality, aes(Temp, Ozone)) +
 summary(airquality)
 ```
 
-## Python coding
+## Python\index{Python} coding
 For a demonstration of a line plot on a polar axis, see @fig-polar. An R scatterplot is shown above in @fig-airq.
 
 ```{python fig-polar}
@@ -70,7 +70,7 @@ plt.show()
 
 ![A line plot on a polar axis](images/fig-polar-output-1.png){#fig-polar fig-align="center"}
 
-## Julia coding
+## Julia\index{Julia} coding
 Plot function pair (x(u), y(u)). See @fig-parametric for an example.
 
 ```{julia julia-parametric}
