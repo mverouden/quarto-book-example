@@ -1,17 +1,18 @@
 # Introduction
-
 This is a book created from markdown and executable code.
 
 See @knuth84 for additional discussion of literate programming.
 
 ## R coding
-
 For a demonstration of a scatterplot in R, see @fig-airq.
 
-```{r echo=TRUE, eval=TRUE}
+```{r fig-airq}
 #| label: fig-airq
+#| echo: true
+#| eval: true
 #| fig-cap: 'Scatterplot of Ozone vs. Temperature for the *airquality* data set'
 #| fig-align: center
+#| warning: false
 
 library(ggplot2)
 ggplot(airquality, aes(Temp, Ozone)) +
@@ -19,17 +20,23 @@ ggplot(airquality, aes(Temp, Ozone)) +
         geom_smooth(method = "loess", se = FALSE)
 ```
 
-```{r eval=FALSE}
+```{r sum-airq}
+#| label: sum-airq
+#| echo: true
+#| eval: false
 #| code-fold: false
 
 summary(airquality)
 ```
 
 ## Python coding
-
 For a demonstration of a line plot on a polar axis, see @fig-polar. An R scatterplot is shown above in @fig-airq.
 
-```{python eval=FALSE}
+```{python fig-polar}
+#| label: fig-polar
+#| echo: true
+#| eval: false
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -47,10 +54,13 @@ plt.show()
 ![A line plot on a polar axis](images/fig-polar-output-1.png){#fig-polar fig-align="center"}
 
 ## Julia coding
-
 Plot function pair (x(u), y(u)). See @fig-parametric for an example.
 
-```{julia echo=TRUE, eval=FALSE}
+```{julia julia-parametric}
+#| label: julia-parmetric
+#| echo: true
+#| eval: false
+
 using Plots
 
 plot(sin, 
