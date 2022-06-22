@@ -1,0 +1,31 @@
+project:
+  type: book
+
+book:
+  title: "Quarto Book example"
+  subtitle: "subtitle of the book"
+  author: "Author, Frances I.R.S.T, and Coauthor, Second T.O."
+  date: "6/22/2022"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    code-background: true
+    code-fold: true
+  pdf:
+    documentclass: scrreprt
+    papersize: a4
+  epub:
+    cover-image: cover.png
+
+execute:
+  warning: false
+
+jupyter: python3
