@@ -28,8 +28,12 @@ format:
     papersize: a4
     # geometry:
     #   - showframe
+    include-in-header: latex/preamble.tex
+    include-before-body: latex/before_body.tex
+    include-after-body: latex/after_body.tex
+    keep-tex: false
   epub:
-    cover-image: cover.png
+    cover-image: images/cover.png
   # docx:
   #   toc: true
   #   number-sections: true
