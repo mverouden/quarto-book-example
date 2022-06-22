@@ -17,6 +17,9 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+      # light: flatly
+      # dark: darkly
+    highlight-style: default
     code-background: true
     code-fold: true
     code-summary: "Show the code"
@@ -30,7 +33,7 @@ format:
   # docx:
   #   toc: true
   #   number-sections: true
-  #   highlight-style: github
+  #   highlight-style: default
 
 execute:
   warning: false
