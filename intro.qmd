@@ -1,4 +1,21 @@
 # Introduction
+
+<!-- Set knitr options -->
+```{r knitrSetupOptions}
+#| label: knitrSetupOptions
+#| eval: true
+#| include: false
+
+## load required packages
+lapply(X = list("knitr", "xtable"),
+       FUN = library,
+       character.only = TRUE) # ... argument
+## set global chunk options
+opts_chunk$set(comment = "#>",
+               tidy = FALSE)
+knit_theme$set("default")
+```
+
 This is a book created from markdown and executable code.
 
 See @knuth84 for additional discussion of literate programming.
@@ -23,7 +40,7 @@ ggplot(airquality, aes(Temp, Ozone)) +
 ```{r sum-airq}
 #| label: sum-airq
 #| echo: true
-#| eval: false
+#| eval: true
 #| code-fold: false
 
 summary(airquality)
