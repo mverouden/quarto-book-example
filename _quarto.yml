@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "Quarto Book example"
-  subtitle: "subtitle of the book"
+  title: "Quarto Book"
+  subtitle: "A KOMA-Script example"
   author: "Author, Frances I.R.S.T, and Coauthor, Second T.O."
   date: "6/22/2022"
   chapters:
