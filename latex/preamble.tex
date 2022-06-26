@@ -1,5 +1,45 @@
 %% PACKAGES
+\KOMAoptions{paper=a4,fontsize=10pt,DIV=12}
+
+%% FONT
+% \usepackage[T1]{fontenc}
+% \usepackage[utf8]{inputenc}
+% \usepackage[osf,sc]{mathpazo}
+% \linespread{1.05}
+
+\usepackage{fontspec}
+\setmainfont{Verdana}[
+  Path=./fontFiles/,
+  Extension = .ttf ,
+  UprightFont = verdana,
+  BoldFont = verdanab,
+  ItalicFont = verdanai,
+  BoldItalicFont = verdanaz]
+\setmonofont{Courier New}[
+  Path=./fontFiles/,
+  Extension = .ttf ,
+  UprightFont = cour,
+  BoldFont = courbd,
+  ItalicFont = couri,
+  BoldItalicFont = courbi,
+  SizeFeatures={Size=9},
+  Color={0019D4}]
+
+\setkomafont{disposition}{\normalfont}
+
 \usepackage{makeidx}
 \makeindex
+
+% NEW COMMANDS
+\newcommand{\scscst}{\scriptscriptstyle}%
+\newcommand{\scst}{\scriptstyle}%
+\newcommand{\Robject}[1]{\textit{\textbf{#1}}}% _**#1**_
+\newcommand{\Rfunction}[1]{\textit{#1}}% *#1*
+\newcommand{\Rclass}[1]{\textit{#1}}% *#1*
+\newcommand{\Rpackage}[1]{\textbf{#1}}% **#1**
+\newcommand{\Rexpression}[1]{\texttt{#1}}% <tt>#1</tt>
+\newcommand{\Rmethod}[1]{\texttt{#1}}%  <tt>#1</tt>
+\newcommand{\Rfunarg}[1]{\texttt{#1}}% <tt>#1</tt>
+\newcommand{\filename}[1]{\textsf{#1}}%
 
 % \frontmatter
