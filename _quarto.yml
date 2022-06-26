@@ -17,15 +17,16 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-      # light: flatly
-      # dark: darkly
+    # theme:
+    #   light: flatly
+    #   dark: darkly
     highlight-style: default
     code-background: true
     code-fold: true
     code-summary: "Show the code"
   pdf:
     documentclass: scrbook
-    papersize: a4
+    # papersize: a4
     # geometry:
     #   - showframe
     include-in-header: latex/preamble.tex
