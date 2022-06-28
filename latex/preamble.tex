@@ -1,34 +1,39 @@
+%% KOMA-script scrbook
+\KOMAoptions{paper=a4,fontsize=10pt,BCOR=5mm,DIV=12,chapterprefix=true,headings=openright}
+\renewcommand{\chapapp}{Lesson}
+
 %% PACKAGES
-\KOMAoptions{paper=a4,fontsize=10pt,DIV=12}
-
-%% FONT
-% \usepackage[T1]{fontenc}
-% \usepackage[utf8]{inputenc}
-% \usepackage[osf,sc]{mathpazo}
-% \linespread{1.05}
-
-\usepackage{fontspec}
-\setmainfont{Verdana}[
-  Path=./fontFiles/,
-  Extension = .ttf ,
-  UprightFont = verdana,
-  BoldFont = verdanab,
-  ItalicFont = verdanai,
-  BoldItalicFont = verdanaz]
-\setmonofont{Courier New}[
-  Path=./fontFiles/,
-  Extension = .ttf ,
-  UprightFont = cour,
-  BoldFont = courbd,
-  ItalicFont = couri,
-  BoldItalicFont = courbi,
-  SizeFeatures={Size=9},
-  Color={0019D4}]
-
-\setkomafont{disposition}{\normalfont}
-
 \usepackage{makeidx}
 \makeindex
+\usepackage[totoc]{idxlayout}
+\usepackage{hyperref}
+\usepackage{amsthm}
+
+%% FONT
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[osf,sc]{mathpazo}
+\linespread{1.05}
+
+% \usepackage{fontspec}
+% \setmainfont{Verdana}[
+%   Path=./fontFiles/,
+%   Extension = .ttf ,
+%   UprightFont = verdana,
+%   BoldFont = verdanab,
+%   ItalicFont = verdanai,
+%   BoldItalicFont = verdanaz]
+% \setmonofont{Courier New}[
+%   Path=./fontFiles/,
+%   Extension = .ttf ,
+%   UprightFont = cour,
+%   BoldFont = courbd,
+%   ItalicFont = couri,
+%   BoldItalicFont = courbi,
+%   SizeFeatures={Size=9},
+%   Color={0019D4}]
+
+\setkomafont{disposition}{\normalfont}
 
 % NEW COMMANDS
 \newcommand{\scscst}{\scriptscriptstyle}%
