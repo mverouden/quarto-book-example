@@ -8,8 +8,9 @@ book:
   author: "Author, Frances I.R.S.T, and Coauthor, Second T.O."
   date: "6/28/2022"
   cover-image: images/cover.png
-  site-url: https://rstudio-education.github.io/hopr/
-  repo-url: https://github.com/jjallaire/hopr/
+  site-url: https://www.verouden.net/
+  # site-url: https://rstudio-education.github.io/hopr/
+  repo-url: https://github.com/mverouden/quarto-book-example/
   repo-branch: main
   repo-actions: [edit]
   sharing: [twitter, facebook, linkedin]
