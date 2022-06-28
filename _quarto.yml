@@ -1,18 +1,33 @@
 project:
   type: book
+  # output-dir: docs
 
 book:
   title: "Quarto Book"
   subtitle: "A KOMA-Script example"
   author: "Author, Frances I.R.S.T, and Coauthor, Second T.O."
-  date: "6/22/2022"
+  date: "6/28/2022"
+  cover-image: images/cover.png
+  site-url: https://rstudio-education.github.io/hopr/
+  repo-url: https://github.com/jjallaire/hopr/
+  repo-branch: main
+  repo-actions: [edit]
+  sharing: [twitter, facebook, linkedin]
+  number-sections: true
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - part: "Week 1"
+      chapters:
+        - intro.qmd
+    - part: "Week 2"
+      chapters:
+        - summary.qmd
+    - bibliography.qmd
+    - sessionInfo.qmd
 
-bibliography: references.bib
+bibliography:
+  - latex/bibliography.bib
+csl: latex/chemometrics-and-intelligent-laboratory-systems.csl
 
 format:
   html:
@@ -21,18 +36,27 @@ format:
     #   light: flatly
     #   dark: darkly
     highlight-style: default
+    cover-image: images/cover.png
     code-background: true
-    code-fold: true
-    code-summary: "Show the code"
+    code-fold: false
+    # code-summary: "Show the code"
+    code-link: true
   pdf:
     documentclass: scrbook
-    # papersize: a4
     # geometry:
     #   - showframe
     include-in-header: latex/preamble.tex
     include-before-body: latex/before_body.tex
     include-after-body: latex/after_body.tex
+    toc: true
+    toc-depth: 3
+    toc-title: Contents
     keep-tex: false
+    subject: "test"
+    keywords:
+      - "keyword 1"
+      - "keyword 2"
+      - "keyword 3"
   epub:
     cover-image: images/cover.png
   # docx:
@@ -43,4 +67,4 @@ format:
 execute:
   warning: false
 
-jupyter: python3
+# jupyter: python3
