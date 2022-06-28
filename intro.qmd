@@ -1,3 +1,5 @@
+<!-- \pagestyle{headings} -->
+
 # Introduction
 
 <!-- Set knitr options -->
@@ -6,30 +8,27 @@
 #| eval: true
 #| include: false
 
-## load required packages
-lapply(X = list("knitr", "xtable"),
-       FUN = library,
-       character.only = TRUE) # ... argument
-## set global chunk options
-opts_chunk$set(comment = "#>",
-               tidy = FALSE)
-knit_theme$set("default")
+knitr::opts_chunk$set(comment = "#>",
+                      tidy = FALSE)
+knitr::knit_theme$set("default")
 ```
 
 This is a book created from markdown\index{markdown} and executable code.
 
 See @knuth84 for additional discussion of literate programming.
 
-## R coding
+## R coding {#sec-r-coding}
+
 For a demonstration of a scatterplot in R, see @fig-airq.
 
 ```{r fig-airq}
 #| label: fig-airq
-#| echo: true
+#| echo: false
 #| eval: true
 #| fig-cap: 'Scatterplot of Ozone vs. Temperature for the *airquality* data set'
 #| fig-align: center
 #| warning: false
+#| code-fold: true
 
 library(ggplot2)
 ggplot(airquality, aes(Temp, Ozone)) +
@@ -53,6 +52,9 @@ For a demonstration of a line plot on a polar axis, see @fig-polar. An R scatter
 #| label: fig-polar
 #| echo: true
 #| eval: false
+#| code-fold: true
+#| code-summary: "Show the code"
+#| code-line-numbers: true
 
 import numpy as np
 import matplotlib.pyplot as plt
